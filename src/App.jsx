@@ -9,6 +9,7 @@ import Menu from "./components/Menu";
 import Students from './pages/Students';
 import SearchForm from './pages/SearchForm';
 import SearchResults from './pages/SearchResults';
+import Details from './pages/Details';
 function App() {
 
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path='/about' element={<About />} />
         <Route path='/contact-us' element={<Contacts />} />
         <Route path='/students/:sid' element={<Students />} />
+        <Route path='/details/:id' element={<Details />} />
         <Route path='/form' element={<SearchForm />} />
         <Route path='/search' element={<SearchResults />} />
         <Route path='*' element={<Notfound />} />
