@@ -31,11 +31,12 @@ function Details() {
     return (
         <div className='container'>
             {
-                (error == true) ? <div className='text-success fs-3'>Student record not found</div> : <div>
+                (error == true) ? <div className='text-success fs-3'>Student record not found</div> : <Card title="Student Details"> <div>
                     <h2>Name: {student.name}</h2>
                     <h3>City: {student.city}</h3>
                     <h4>Age : {student.age}</h4>
                 </div>
+                </Card>
             }
 
         </div>
