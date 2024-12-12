@@ -22,6 +22,7 @@ function Home() {
     <div id='home-page'>
       <div className="container">
         <h1 className="text-center mb-3">Tasks Application </h1>
+        <Card>
         <table className="table">
           <thead>
             <tr>
@@ -54,6 +55,8 @@ function Home() {
             }
           </tbody>
         </table>
+        </Card>
+        
       </div>
     </div>
   )
