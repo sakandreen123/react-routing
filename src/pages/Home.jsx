@@ -1,4 +1,3 @@
-import React from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
 import React, { useState, useEffect } from 'react'
@@ -10,7 +9,7 @@ function Home() {
 
   useEffect(() => {
 
-    axios.get("https://674e913e635bad45618f12bb.mockapi.io/studens").then((response) => {
+    axios.get("https://674e913e635bad45618f12bb.mockapi.io/students").then((response) => {
 
       setStudents(response.data);
     })
